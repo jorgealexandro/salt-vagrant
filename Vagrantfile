@@ -18,6 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       master_config.vm.host_name = 'saltmaster.local'
       master_config.vm.network "private_network", ip: "#{net_ip}.10"
       master_config.vm.synced_folder "saltstack/salt/", "/srv/salt"
+      master_config.vm.synced_folder "saltstack/formulas/", "/srv/formulas"
       master_config.vm.synced_folder "saltstack/pillar/", "/srv/pillar"
 
       master_config.vm.provision :salt do |salt|

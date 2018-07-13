@@ -1,9 +1,12 @@
 =================
-Salt Vagrant Demo
+Salt Vagrant - State Tree Base Line
 =================
 
-A Salt Demo using Vagrant.
+State tree base line for NS
 
+Formulas:
+https://github.com/saltstack-formulas/docker-formula
+https://github.com/saltstack-formulas/jenkins-formula.git
 
 Instructions
 ============
